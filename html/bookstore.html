@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ISKCON|Bookstore</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/bookstore.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="../js/bookstore.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../assets/image/Iskconlogo.png" width="45" height="45" alt="ISKCON - The Hare Krishna Movement">
+                            ISKCON
+                        </a>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHead">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse " id="navbarHead">
+                            <ul class="navbar-nav centerMenu ">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="activePage" class="nav-link active" href="#">Bookstore</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.iskcon.org/about-us/what-is-iskcon.php">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://centres.iskcon.org/">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                
+                <div class="navbar-nav d-none d-md-flex"> 
+                    <a href="https://www.facebook.com/iskconglobal" class="nav-item nav-link"><i class="social fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/india_iskcon" class="nav-item nav-link"><i class="social fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCnQ0YFFLezzd5TEx4j8Dfzw" class="nav-item nav-link"><i class="social fa fa-youtube"></i></a>
+                    </div> 
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid" id="mainBody">
+            <div class="row" style="padding-top:7rem;">
+                <div class="col-12 col-md-3 sidebar">
+                    <h2 class="text-center underlined"><i class="fa fa-chevron-right fa-sm"></i>Browse by Category </h2> <br>
+                    <nav class="nav nav-pills nav-fill d-inline-flex floa-left d-md-block text-left">
+                        <a class="nav-item nav-link selectAll active" check="all" href="#mainBody">All</a>
+                        <a class="nav-item nav-link " check="bhakti"  href="#mainBody">Bhakti-Vedas</a>
+                        <a class="nav-item nav-link " check="children" href="#mainBody">Children</a>
+                        <a class="nav-item nav-link selectAll" check="all" >Example - 1</a>
+                        <a class="nav-item nav-link selectAll" check="all" >Example - 2</a>
+                        <a class="nav-item nav-link selectAll" check="all" >Example - 3</a>     
+                    </nav>
+                </div>
+                <div class="col-12 col-md-8 main" style="margin-left:auto; margin-right: auto; ">
+                    <div class="row offerImage align-items-center ">
+                        <div class="col-12 col-md-6 text-center align-items-center">
+                            <h2>Religious literature are an<br>  </h2>
+                            <h3>Ideal source of wisdom</h3>
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <img class="img-fluid img-thumbnail" src="../assets/image/main2.jpg" > 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="booksBody">
+                        <div class="row justify-content-start align-items-end">
+                            <div class="col-6 col-sm-3 filter" check="bhakti">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top" src="../assets/image/book1.jpg" alt="Book1 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>
+                                        <p class="card-text">Author Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 filter" check="bhakti">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top" src="../assets/image/book2.jpg" alt="Book2 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>
+                                        <p class="card-text">Author Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 filter" check="children">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top" src="../assets/image/book3.jpg" alt="Book3 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>     
+                                        <p class="card-text">Author Name</p>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 filter" check="bhakti">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top " src="../assets/image/book4.jpg" alt="Book4 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>
+                                        <p class="card-text">Author Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 filter" check="bhakti">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top" src="../assets/image/book1.jpg" alt="Book1 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>
+                                        <p class="card-text">Author Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 filter" check="bhakti">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top" src="../assets/image/book2.jpg" alt="Book2 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>
+                                        <p class="card-text">Author Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 filter" check="children">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top" src="../assets/image/book3.jpg" alt="Book3 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>     
+                                        <p class="card-text">Author Name</p>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 filter" check="bhakti">
+                                <div class="card text-center featuring">
+                                    <img class="card-img-top " src="../assets/image/book4.jpg" alt="Book4 Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Book Name</h5>
+                                        <p class="card-text">Author Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-5 mb-2" >
+                        <nav aria-label="This is a pagination">
+                            <ul class="pagination pagination-circle">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabidex="-1" aria-disabled="false">Previous</a> 
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#" >1</a> 
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" >2</a> 
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" >3</a> 
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" >Next</a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="bg-drk text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-8 mb-9">
+                        <h4 class="text-uppercase text-left iskcon">ISKCON.</h4>
+                        <p class="text-left italic">The International Society for Krishna Consciousness (ISKCON), otherwise known as the Hare Krishna movement
+                            belongs to the Gaudiya-Vaishnava sampradāya, a monotheistic tradition within the Vedic or Hindu culture. Philosophically it 
+                            is based on the Sanskrit texts Bhagavad-gītā and the Bhagavat Purana, or Srimad Bhagavatam. These are the historic texts of 
+                            the devotional bhakti yoga tradition, which teaches that the ultimate goal for all living beings is to reawaken their love for
+                             God, or Lord Krishna, the “all-attractive one”.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-9">
+                        <h4 class="text-uppercase d-none d-md-block follow">Follow us</h4>
+                        <div class="d-inline-block footerSocials"> 
+                             <a href="https://www.facebook.com/iskconglobal" ><i class="social fa fa-facebook"></i></a>
+                             <a href="https://twitter.com/india_iskcon" ><i class="social fa fa-twitter"></i></a> 
+                             <a href="https://www.youtube.com/channel/UCnQ0YFFLezzd5TEx4j8Dfzw" ><i class="social fa fa-youtube"></i></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <strong class="text-muted ">
+                    <a class="nav-link" href="https://www.iskcon.org/">Iskcon.org </a>
+                    © 2020. All Rights Reserved. Site Powered by:
+                    <a class="nav-link" href="https://github.com/JotSinghChawla">Jot Singh</a>
+                </strong>
+            </div>
+        </footer>
+    </body>
+</html>
