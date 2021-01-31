@@ -1,13 +1,14 @@
 $(document).ready(function(){
+
     //To show categorised Books content
     $(window).on('scroll',function() {
         if ($(this).scrollTop() >= (($(document).height() - $(window).height()) - $('footer').innerHeight()) + 100 ) {
-            $('.sidebar').addClass('hide');
-            $('.sidebar').removeClass('show');
+            $('.sidebar').addClass('hideCategory');
+            $('.sidebar').removeClass('showCategory');
           }
         else {
-            $('.sidebar').addClass('show');
-            $('.sidebar').removeClass('hide');
+            $('.sidebar').addClass('showCategory');
+            $('.sidebar').removeClass('hideCategory');
         }
      });
 
@@ -40,5 +41,14 @@ $(document).ready(function(){
         $("#activePage").removeClass('active');
     },function(){
         $("#activePage").addClass('active');
+    });
+
+    //To collapse menu once after the page loads
+    if($(window).width() <= 768) {
+        $('.categoryMenu').addClass('collapse');
+    }
+
+    $('.buttonToggle').on('click',function(){
+        $('.buttonToggle i').toggleClass('fa-chevron-down');
     });
 });

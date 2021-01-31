@@ -5,7 +5,7 @@ html {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    line-height: 1.6rem;
     z-index: 1;
 }
 li{
@@ -83,14 +83,12 @@ li{
 }
 .mainImage {
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7) ), url(../assets/image/main.jpg) ;
-  /*  filter: brightness(45%); */
-
-    height:900px;
+    height:850px;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
     position: relative;/*
-    width: 100%;
     margin-top: 0px;
     width:100%;*/
 }
@@ -98,7 +96,7 @@ li{
     color: white;
     filter: brightness(1);
     width: 100%;
-    top:60%;
+    top:70%;
     left:50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -133,7 +131,8 @@ li{
     opacity:0.8;
 }
 .jumbotron{
-    height:350px;
+    padding-top:80px;
+    margin-bottom: 0px;
     background-color: white;
     text-align: center;
 }
@@ -191,6 +190,7 @@ footer .social{
 .copyright{
     background-color: black;
     font-weight: 100;
+    line-height: 1.6rem;
 }
 .copyright a{
     color:#6c757d;

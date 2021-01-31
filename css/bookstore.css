@@ -70,19 +70,27 @@ body{
     border-bottom: 3px solid black;
     transition: all .3s;
 }
-.centerMenu{
+.centerMenu {
     margin:14px auto 8px;
 }
 .navbar .nav-item{
     padding:0 8px;
 }
-.hide{
+.hideCategory {
     opacity: 0;
     transition: opacity .2s ease;   
 }
-.show{
-    opacity: 1;   
+.showCategory {
+    opacity: 1;  
     transition: opacity 0.2s ease;  
+}
+.hide {
+    display: none;
+    transition: all 1s ease;
+}
+.show {
+    display: initial;
+    transition: all 1s ease;
 }
 
 .nav-pills .nav-item{
@@ -141,13 +149,26 @@ body{
         background-size:100% 100%;
     }
 }
-.sidebar{
+.sidebar {
     border-right: #ddd 2px solid;
-    height: 150%;
+    height: 100%;
+    height: 100%;
     position: sticky;
     top:12rem;
-    bottom:-500px;
 }
+.buttonToggle {
+    display: grid;
+    justify-content: center;
+    pointer-events: none;
+}
+.buttonToggle:hover{
+    text-decoration: none;
+}
+.categoryMenu {
+    display: block;
+    visibility:visible;
+}
+
 
 .offerImage {
     border-bottom: solid 2px #ddd;
@@ -169,19 +190,6 @@ body{
     width: 370px;
     height: 15rem;
 }
-@media screen and (max-width: 768px) {
-    body{
-        font-size: 0.9rem;
-    }
-    .sidebar {
-        display: inline;
-        width: 100%;
-        height: auto;
-        position: inherit;
-      }
-      .sidebar a {float: left;}
-      div.content {margin-left: 0;}
-  }
 
 .card-body{
     padding: 0.5rem  0;
@@ -216,9 +224,6 @@ body{
     100% {
       opacity: 1;
     }
-}
-.sidebar{
-    height: 100%;
 }
 
 
@@ -264,6 +269,7 @@ footer .social{
 .copyright{
     background-color: black;
     font-weight: 100;
+    line-height: 1.6rem;
 }
 .copyright a{
     color:#6c757d;
@@ -272,4 +278,17 @@ footer .social{
 }
 .copyright a:hover{
     color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 0.9rem;
+    }
+    .sidebar {
+        position: inherit;
+    }
+    .buttonToggle{
+        pointer-events: auto;
+    }
 }
