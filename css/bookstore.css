@@ -190,12 +190,12 @@ body{
 .card {
     display: block;
 }
-.booksBody .row .col-12{
+.booksBody .row .col-6{
     display: none;
     opacity: 0;
     padding:15px 25px;
 }
-.booksBody .row .col-12.active{
+.booksBody .row .col-6.active{
     opacity: 1;
     display: block;
     -webkit-animation: fadeInBooks 0.2s ease forwards;
