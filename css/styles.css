@@ -83,7 +83,7 @@ li{
 }
 .mainImage {
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7) ), url(../assets/image/main.jpg) ;
-    height:850px;
+    height:110vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
